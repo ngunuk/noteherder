@@ -8,8 +8,8 @@ const Main = () => {
     return (
         <div className="Main">
             <Sidebar />
-            <NoteList />
             <NoteForm />
+            <NoteList />
         </div>
     )
 }
