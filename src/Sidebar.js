@@ -20,13 +20,32 @@ const Sidebar = () => {
           style={styles.logoImg}
         />
       </div>
-      <a className="new-note" href="/notes">
-        <img src={newHover} alt="New note" />
-        <img className="outline" src={newIcon} alt="New note" />
+      <a
+        className="new-note"
+        href="/notes"
+        style={styles.newNote}
+      >
+        <img
+          src={newHover}
+          alt="New note"
+          style={styles.newNoteImg}
+        />
+        <img
+          className="outline"
+          src={newIcon}
+          alt="New note"
+          style={styles.newNoteImg}
+        />
       </a>
-      <div className="SignOut">
-        <button>
-          <i className="fa fa-sign-out"></i>
+      <div
+        className="SignOut"
+        style={styles.signOut}
+      >
+        <button style={styles.button}>
+          <i
+            className="fa fa-sign-out"
+            style={styles.buttonIcon}
+          ></i>
         </button>
       </div>
     </nav>
@@ -52,9 +71,29 @@ const styles = {
     paddingLeft: '0.4rem',
   },
   newNote: {
-    margin: '2rem',
+    marginTop: '2rem',
     position: 'relative',
-    width: '30px'
+    width: '4rem',
+  },
+  newNoteImg: {
+    position: 'absolute',
+    left: '0',
+    width: '100%',
+    transition: 'opacity 0.25s ease-in-out',
+  },
+  signOut: {
+    position: 'absolute',
+    bottom: '1rem',
+  },
+  button: {
+    backgroundColor: 'transparent',
+    border: '0',
+    color: '#008bf8',
+    cursor: 'pointer',
+    outline: 'none',
+  },
+  buttonIcon: {
+    fontSize: '2rem',
   },
 }
 
