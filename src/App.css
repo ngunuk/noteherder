@@ -1,8 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Fauna+One|Oxygen:400,300,700);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -21,10 +19,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: Fauna One;
+  font-family: "Fauna One";
   font-weight: 400;
   color: #008bf8;
 }
 .App {
-  font-family: Oxygen, Helvetica, Arial, sans-serif
+  font-family: Oxygen, Helvetica, Arial, sans-serif;
 }
