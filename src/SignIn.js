@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 import './SignIn.css'
 import quill from './quill.svg'
 import googleLogo from './google.svg'
-import { auth, githubProvider } from './base'
+import { auth, githubProvider, googleProvider } from './base'
 
 const SignIn = () => {
   const authenticate = (provider) => {
@@ -25,8 +26,10 @@ const SignIn = () => {
           <i className="fab fa-github"></i>
           Sign in with GitHub
         </button>
-        <button className="google">
+        <button className="google" 
+        onClick={() => authenticate(googleProvider)}>
           <img src={googleLogo} alt="" />
+
           Sign in with Google
         </button>
       </main>
