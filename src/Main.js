@@ -13,6 +13,19 @@ class Main extends Component {
     }
   }
 
+  componentWillMount() {
+    const notes = JSON.parse(localStorage.getItem('notes'))
+    if (notes){
+    this.setState({ notes })
+  }
+  }
+
+  componentDidUpdate() {
+    const notesString = JSON.stringify(this.state.notes)
+    localStorage.setItem('notes', notesString)
+  
+  }
+
   blankNote = () => {
     return {
       id: null,
