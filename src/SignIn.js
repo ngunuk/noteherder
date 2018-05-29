@@ -29,7 +29,6 @@ const SignIn = () => {
         <button className="google" 
         onClick={() => authenticate(googleProvider)}>
           <img src={googleLogo} alt="" />
-
           Sign in with Google
         </button>
       </main>
