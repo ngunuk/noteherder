@@ -20,3 +20,4 @@ export const googleProvider = new firebase.auth.GoogleAuthProvider()
 export const auth = firebase.auth()
 
 export default Rebase.createClass(app.database())
+
