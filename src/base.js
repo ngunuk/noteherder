@@ -13,7 +13,7 @@ import Rebase from 're-base'
     messagingSenderId: "849432446339"
   };
 
-  const app = firebase.initializeApp(config)
+const app = firebase.initializeApp(config)
 
 export const githubProvider = new firebase.auth.GithubAuthProvider()
 export const googleProvider = new firebase.auth.GoogleAuthProvider()
