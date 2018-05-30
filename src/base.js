@@ -11,13 +11,11 @@ import Rebase from 're-base'
     projectId: "xtbc-dd2df",
     storageBucket: "xtbc-dd2df.appspot.com",
     messagingSenderId: "849432446339"
-  };
-
-const app = firebase.initializeApp(config)
-
-export const githubProvider = new firebase.auth.GithubAuthProvider()
-export const googleProvider = new firebase.auth.GoogleAuthProvider()
-export const auth = firebase.auth()
-
-export default Rebase.createClass(app.database())
-
+  }
+  const app = firebase.initializeApp(config)
+  
+  export const githubProvider = new firebase.auth.GithubAuthProvider()
+  export const googleProvider = new firebase.auth.GoogleAuthProvider()
+  export const auth = firebase.auth()
+  
+  export default Rebase.createClass(app.database())
